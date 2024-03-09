@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+$h1: 70px;
+$h2: 36px;
+$h3: 24px;
+$h4: 16px;
+$beige: #F5F5DC;
+$green-light: #d5ddcf;
+$olive: #b6cfb6;
+$txt-grey: #1e2925;
+$cont-width: 1210px;
+$cont-space: 25px;
+
+.h1 {
+    font-size: $h1;
+}
+
+.h2 {
+    font-size: $h2;
+}
+
+.h3 {
+    font-size: $h3;
+}
+
+.h4 {
+    font-size: $h4;
+}
+
+.txt-grey {
+    color: $txt-grey;
+}
+
+.thin {
+    font-weight: 200;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+     font-weight: 500;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.container {
+    max-width: calc(($cont-width) + ($cont-space));
+    margin: 0 auto;
+    padding: 0 $cont-space;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-btw {
+    justify-content: space-between;
+}
+
+.justify-cntr {
+    justify-content: center;
+}
+
+.txt-cntr {
+    text-align: center;
+}
+
+.pd-r {
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pd-l {
+    padding-left: 10px;
+}
+
+.pd-top {
+    padding-top: 80px;
+}
+.header {
+    background-image: url(../img/img-bg.jpg);
+    height: calc(100vh - 208.5px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.accent:hover {
+    color: darkolivegreen
+}
+
+.logo {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.card-section {
+    background-color: $green-light;
+    margin-top: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.card {
+    background-color: white;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0px 7px 25px 0px;
+}
+.card-img {
+    width: 350px;
+    height: 350px;
+    padding-bottom: 40px;
+}
+
+h3 {
+    letter-spacing: 2px;
+}
+
+.txt-card {
+    padding-bottom: 30px;
+}
+
+.section-about {
+    background-color: $green-light;
+    padding-top: 80px;
+}
+
+.img-about {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    @media screen and (max-width: 1020px) {
+        margin: 0 auto;
+        max-width: 300px;
+        height: 300px;
+        padding-bottom: 30px;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1020px) {
+        flex-wrap: wrap;
+    }
+}
+
+.about-content {
+    background-color: white;
+    text-align: center;
+}
+
+.h-about {
+    padding-top: 160px;
+    @media screen and (max-width: 1020px){
+        padding-top: 50px;
+    }
+}
+
+.p-about {
+    padding: 40px 100px 0px 100px;
+    @media screen and (max-width: 1020px) {
+        padding-bottom: 50px;
+    }
+}
+
+.sub {
+    background-color: $olive;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    margin-top: 15px;
+    padding-left: 15px;
+    background-color: $green-light;
+    border: 1px solid $beige;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    border: 1px solid $txt-grey;
+    background-color: transparent;
+    color: $txt-grey;
+}
+
+.icon {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.footer {
+    margin: 60px 0 60px 0;
+}
+
